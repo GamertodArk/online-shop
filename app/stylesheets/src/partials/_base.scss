@@ -1,0 +1,11 @@
+// General Styles
+*,
+*:before,
+*:after {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+// Import all the modules
+@import '../modules/all';

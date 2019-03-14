@@ -1,0 +1,105 @@
+// Include the partials base
+@import 'partials/base';
+
+body {
+	line-height: 1.3;
+	background-color: $grey;
+	font-family: 'Roboto', 'Arial', sans-serif;
+
+	header {
+		z-index: 1;
+		width: 100%;
+		padding: 2em;
+		height: 60vh;
+		position: relative;
+		@include center-flex(center);
+		background-color: $dark_grey;
+		@include image-background('header-background.jpg');
+	
+		.header-overlay {
+			z-index: 2;
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0.3;
+			background-color: $black;
+		}
+
+		.header-content {
+			z-index: 3;
+			text-align: center;
+			@include center-flex(center);
+			flex-direction: column;
+
+			h2 {
+				color:$white; 
+				font-size: 30pt;
+			}
+
+			p {
+				color: $white;
+				opacity: 0.5;
+				margin: 1.5em 0px;
+			}
+
+			.image-rights {
+				margin: 0px;
+				bottom: 15px;
+				position: absolute;
+				@include transition(0.2s, opacity, 0.1s, ease-out);
+
+				&:hover {
+					opacity: 1;
+				}
+
+				a {
+					color: $white;
+					text-decoration: none;
+				}
+			}
+
+			.search {
+				width: 70%;
+				margin: 0em auto;
+
+				.input-wrapper {
+					padding: 5px;
+					border-radius: 5px;
+					background-color: $white;
+					@include center-flex(center);
+
+					input[type=text]{
+						width: 90%;
+						border: none;
+						padding: 10px;
+						font-size: 12pt;
+						background-color: transparent;
+
+						// Check these lines of code
+						&:focus {
+							border: none;
+						}
+					}
+
+					input[type=submit] {
+						width: 10%;
+						border: none;
+						cursor: pointer;
+						font-size: 12pt;
+						background: none;
+						color: $dark_grey;
+						@include transition(0.2s, color, 0.1s, ease-out);
+
+						&:hover {
+							color: darken($dark_grey, 30%);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+// Centers a single element using flexbox
+@mixin center-flex($align) {
+	display: flex;
+	align-items: center;
+	justify-content: $align;
+}
+
+// Sets an image as an element background with pre-defined settings
+@mixin image-background($image) {
+
+	$images_dir: '../../img/app/';
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("#{$images_dir}#{$image}");
+}
+
+// Transitions with all properties
+@mixin transition($duration, $property, $delay, $timing-function) {
+	transition-delay: $delay;
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $timing-function;
+}
