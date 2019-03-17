@@ -17,9 +17,9 @@ body {
 body header {
   z-index: 1;
   width: 100%;
-  padding: 2em;
-  height: 60vh;
+  height: 800px;
   position: relative;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,6 +28,47 @@ body header {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("../../img/app/header-background.jpg");
+}
+body header nav {
+  top: 0px;
+  z-index: 5;
+  width: 100%;
+  padding: 1em 2em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header nav ul li {
+  color: #FFF;
+  margin: 0px 1em;
+}
+body header nav ul li.logo {
+  font-size: 20pt;
+  font-weight: bold;
+}
+body header nav ul li.logo a {
+  transition: none;
+}
+body header nav ul li.logo a:hover {
+  color: #FFF;
+}
+body header nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  transition-delay: 0.1s;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+body header nav ul li a:hover {
+  color: #e6e6e6;
 }
 body header .header-overlay {
   z-index: 2;
@@ -56,6 +97,7 @@ body header .header-content h2 {
 body header .header-content p {
   color: #FFF;
   opacity: 0.5;
+  padding: 0px 2em;
   margin: 1.5em 0px;
 }
 body header .header-content .image-rights {
@@ -94,7 +136,7 @@ body header .header-content .search .input-wrapper input[type=text] {
   background-color: transparent;
 }
 body header .header-content .search .input-wrapper input[type=text]:focus {
-  border: none;
+  outline: none;
 }
 body header .header-content .search .input-wrapper input[type=submit] {
   width: 10%;
@@ -110,4 +152,60 @@ body header .header-content .search .input-wrapper input[type=submit] {
 }
 body header .header-content .search .input-wrapper input[type=submit]:hover {
   color: #2b2b2b;
+}
+body main section.mejor-vendidos {
+  padding: 2em;
+  background-color: #FFF;
+}
+body main section.mejor-vendidos .section-content h2 {
+  font-size: 25pt;
+  color: #777;
+  text-align: center;
+}
+body main section.mejor-vendidos .section-content hr {
+  width: 90%;
+  display: block;
+  margin: 2em auto;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object {
+  margin: 0px 10px;
+  border: 1px solid #000;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object .img {
+  width: 100%;
+  height: 350px;
+  background-color: #777;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object .info h3 {
+  padding: 0.5em;
+  font-size: 14pt;
+  color: #777;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object .info .desc_meta {
+  width: 100%;
+  font-size: 11pt;
+  background-color: #eee;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object .info .desc_meta p {
+  padding: 0.7em;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object .info .desc_meta .meta {
+  width: 100%;
+  padding: 0.5em;
+  list-style: none;
+  background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main section.mejor-vendidos .section-content .objects-wrapper .object .info .desc_meta .meta li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

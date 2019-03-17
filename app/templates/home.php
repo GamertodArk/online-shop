@@ -6,6 +6,9 @@
 </head>
 <body>
 	<header>
+
+		<?php include INC_DIR . 'home_nav.php'; ?>
+
 		<div class="header-overlay"></div>
 		<div class="header-content">		
 			<h2>Lorem ipsum dolor.</h2>
@@ -23,8 +26,64 @@
 		</div>
 	</header>
 	<main>
-		
+		<section class="section mejor-vendidos">
+			<div class="section-content">
+				<h2>Lorem ipsum dolor.</h2>
+				<hr>
+
+				<div class="objects-wrapper">
+
+					<!-- Object 1 -->
+					<div class="object">
+						<div class="img"></div>
+						<div class="info">
+							<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+							<div class="desc_meta">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, error, nulla suscipit porro cupiditate quo quasi odio iusto alias dolorem.</p>
+
+								<ul class="meta">
+									<li>$: 300</li>
+									<li>&: Venezuela</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Object 2 -->
+					<div class="object">
+						<div class="img"></div>
+						<div class="info">
+							<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+							<div class="desc_meta">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, error, nulla suscipit porro cupiditate quo quasi odio iusto alias dolorem.</p>
+
+								<ul class="meta">
+									<li>$: 300</li>
+									<li>&: Venezuela</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- Object 3 -->
+					<div class="object">
+						<div class="img"></div>
+						<div class="info">
+							<h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+							<div class="desc_meta">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, error, nulla suscipit porro cupiditate quo quasi odio iusto alias dolorem.</p>
+
+								<ul class="meta">
+									<li>$: 300</li>
+									<li>&: Venezuela</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
-	<?php include INC_DIR . 'footer.php' ?>
+	<?php // include INC_DIR . 'footer.php' ?>
 </body>
 </html>

@@ -9,13 +9,57 @@ body {
 	header {
 		z-index: 1;
 		width: 100%;
-		padding: 2em;
-		height: 60vh;
+		// height: 60vh;
+		height: 800px;
 		position: relative;
+		flex-direction: column;
 		@include center-flex(center);
 		background-color: $dark_grey;
 		@include image-background('header-background.jpg');
 	
+		nav {
+			top: 0px;
+			z-index: 5;
+			width: 100%;
+			padding: 1em 2em;
+			position: absolute;
+			@include center-flex(space-between);
+
+			ul {
+				list-style: none;
+				@include center-flex(center);
+
+				li {
+					color: $white;
+					margin: 0px 1em;
+
+					&.logo {
+						font-size:20pt;
+						font-weight: bold;
+
+						a {
+							transition: none;
+
+							&:hover {
+								color: $white;
+							}
+						}
+					}
+
+					a {
+						color: $white;
+						text-decoration: none;
+						@include transition(0.2s, color, 0.1s, ease-out);
+
+
+						&:hover {
+							color: darken($white, 10%);
+						}
+					}
+				}
+			}
+		}
+
 		.header-overlay {
 			z-index: 2;
 			position:absolute;
@@ -43,6 +87,7 @@ body {
 			p {
 				color: $white;
 				opacity: 0.5;
+				padding: 0px 2em;
 				margin: 1.5em 0px;
 			}
 
@@ -79,10 +124,8 @@ body {
 						font-size: 12pt;
 						background-color: transparent;
 
-						// Check these lines of code
-						&:focus {
-							border: none;
-						}
+						// Erase the default outline
+						&:focus { outline: none; }
 					}
 
 					input[type=submit] {
@@ -96,6 +139,74 @@ body {
 
 						&:hover {
 							color: darken($dark_grey, 30%);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	main {
+		section.mejor-vendidos {
+			padding: 2em;
+			background-color: $white;
+
+			.section-content {
+				h2 {
+					font-size: 25pt;
+					color: $dark_grey;
+					text-align: center;
+				}
+
+				hr {
+					width: 90%;
+					display: block;
+					margin: 2em auto;
+				}
+
+				.objects-wrapper {
+					width: 100%;
+					@include center-flex(space-between);
+
+					.object {
+						// width: 400px;
+						margin: 0px 10px;
+						border: 1px solid #000;
+
+						.img {
+							// width: 300px;
+							width: 100%;
+							height: 350px;
+							background-color: $dark_grey;
+						}
+
+						.info {
+							
+							h3 {
+								padding: 0.5em;
+								font-size: 14pt;
+								color: $dark_grey;
+							}
+
+							.desc_meta {
+								width: 100%;
+								font-size: 11pt;
+								background-color: $grey;
+
+								p {
+									padding: 0.7em;
+								}
+
+								.meta {
+									width: 100%;
+									padding: 0.5em;
+									list-style: none;
+									background-color: darken($grey, 5%);
+									@include center-flex(space-between);
+
+									li { @include center-flex(center); }
+								}
+							}
 						}
 					}
 				}
