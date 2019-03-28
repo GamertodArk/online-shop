@@ -9,5 +9,6 @@
 	define('APP_LANG', 'es');
 
 	// Client Constants
+	define('JS_DIR', 'app/js/');
 	define('CSS_DIR', 'app/stylesheets/css/');
 ?>

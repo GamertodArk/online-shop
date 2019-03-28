@@ -17,7 +17,7 @@ body {
 body header {
   z-index: 1;
   width: 100%;
-  height: 800px;
+  height: 600px;
   position: relative;
   flex-direction: column;
   display: flex;
@@ -208,4 +208,46 @@ body main section.mejor-vendidos .section-content .objects-wrapper .object .info
   display: flex;
   align-items: center;
   justify-content: center;
+}
+body main section.section-2 .section-content .slide {
+  width: 100%;
+  height: 400px;
+  padding: 1em 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main section.section-2 .section-content .slide .slide-content {
+  color: #FFF;
+}
+body main section.section-2 .section-content .slide .slide-content h2 {
+  font-size: 25pt;
+}
+body main section.section-2 .section-content .slide .slide-content p {
+  font-size: 14pt;
+  margin: 2em 1em;
+}
+body main section.section-2 .section-content .slide .slide-content a {
+  color: #FFF;
+  display: inline;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid #FFF;
+  transition-delay: 0.1s;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+body main section.section-2 .section-content .slide .slide-content a:hover {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #FFF;
+}
+body main section.section-2 .section-content .slide-1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("../../img/app/slide-1.jpg");
 }

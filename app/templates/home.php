@@ -3,6 +3,7 @@
 <head>
 	<?php include INC_DIR . 'head.php'; ?>
 	<link rel="stylesheet" href="<?php echo CSS_DIR ?>home_styles.css">
+	<link rel="stylesheet" href="<?php echo CSS_DIR ?>flickity.css">
 </head>
 <body>
 	<header>
@@ -83,7 +84,59 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Section 2 -->
+		<section class="section section-2 variety">
+			<div class="section-content">
+					<div class="slider-wrapper" id="slider-wrapper">
+						
+						<!-- First Slide -->
+						<div class="slide slide-1">
+							<div class="slide-content">					
+								<h2>Lorem ipsum dolor.</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia, cum! Cupiditate vitae perspiciatis repellendus voluptates molestias itaque molestiae eum recusandae aut eaque, non laborum animi odit quidem eveniet fugit?</p>
+
+								<a href="#">Lorem ipsum dolor.</a>
+							</div>
+						</div>
+
+						<!-- Second Slide -->
+						<div class="slide slide-1">
+							<div class="slide-content">					
+								<h2>Lorem ipsum dolor.</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia, cum! Cupiditate vitae perspiciatis repellendus voluptates molestias itaque molestiae eum recusandae aut eaque, non laborum animi odit quidem eveniet fugit?</p>
+
+								<a href="#">Lorem ipsum dolor.</a>
+							</div>
+						</div>
+
+						<!-- Third Slide -->
+						<div class="slide slide-1">
+							<div class="slide-content">					
+								<h2>Lorem ipsum dolor.</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, officia, cum! Cupiditate vitae perspiciatis repellendus voluptates molestias itaque molestiae eum recusandae aut eaque, non laborum animi odit quidem eveniet fugit?</p>
+
+								<a href="#">Lorem ipsum dolor.</a>
+							</div>
+						</div>
+					</div>
+
+			</div>
+		</section>
 	</main>
+	<script src="<?php echo JS_DIR ?>flickity.pkgd.min.js"></script>
+	<script>
+		// Sliders wrapper
+		let sliders = document.getElementById('slider-wrapper');
+
+		// Initialize Flickity
+		let flickity = new Flickity('#slider-wrapper', {
+			cellAlign: 'left',
+			contain: 'center',
+			pageDots: false,
+			autoPlay: true
+		});
+	</script>
 	<?php // include INC_DIR . 'footer.php' ?>
 </body>
 </html>
