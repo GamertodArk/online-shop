@@ -126,9 +126,6 @@
 	</main>
 	<script src="<?php echo JS_DIR ?>flickity.pkgd.min.js"></script>
 	<script>
-		// Sliders wrapper
-		let sliders = document.getElementById('slider-wrapper');
-
 		// Initialize Flickity
 		let flickity = new Flickity('#slider-wrapper', {
 			cellAlign: 'left',
@@ -137,6 +134,6 @@
 			autoPlay: true
 		});
 	</script>
-	<?php // include INC_DIR . 'footer.php' ?>
+	<?php include INC_DIR . 'footer.php' ?>
 </body>
 </html>
