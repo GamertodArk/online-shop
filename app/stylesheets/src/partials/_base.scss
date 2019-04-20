@@ -7,5 +7,14 @@
 	box-sizing: border-box;
 }
 
+body {
+	line-height: 1.3;
+	font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+// font weighs
+$normal: 400;
+$bold: 600;
+
 // Import all the modules
 @import '../modules/all';

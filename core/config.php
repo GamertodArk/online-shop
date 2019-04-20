@@ -6,7 +6,7 @@
 
 	// App Constants
 	define('APP_NAME', 'Online Shop');
-	define('APP_LANG', 'es');
+	define('APP_LANG', 'en');
 
 	// Client Constants
 	define('JS_DIR', 'app/js/');

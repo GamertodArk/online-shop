@@ -1,0 +1,46 @@
+nav {
+	width: 100%;
+	padding: 0em 2em;
+	// margin-bottom: 1em;
+	background-color: $white2;
+	@include center-flex(space-between);
+	border-bottom: 1px solid $light_grey;
+
+	ul {
+		list-style: none;
+		@include center-flex(center);
+
+		li {
+			color: $black;
+			font-weight: 500;
+			margin: 0px 0.5em;
+
+			&.logo {
+				font-size:20pt;
+				font-weight: bold;
+
+				a {
+					padding: 0;
+					margin-right: 0.5em;
+					transition: none;
+
+					&:hover {
+						background-color: transparent;
+					}
+				}
+			}
+
+			a {
+				color: #000;
+				padding: 1em 1em;
+				display: inline-block;
+				text-decoration: none;
+				@include transition(0.2s, color, 0.1s, ease-out);
+
+				&:hover {
+					background-color: $light_grey2;
+				}
+			}
+		}
+	}
+}

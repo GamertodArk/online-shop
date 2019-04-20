@@ -1,0 +1,8 @@
+@import 'partials/base';
+
+body {
+	header {  @import 'partials/nav';  }
+
+	// Footer
+	@import 'partials/footer';
+}
