@@ -11,6 +11,24 @@
 
 	<main>
 		<h2>Register on <?php echo APP_NAME ?></h2>
+
+		<form action="" method="POST">
+			<input type="text" name="username" id="username" placeholder="Username">
+
+			<input type="text" name="email" id="email" placeholder="Email">
+
+			<input type="password" name="password" id="password" placeholder="Password">
+			
+			<input type="password" name="password2" id="password2" placeholder="Repeat Password">
+
+			<input type="submit" value="Register">
+		</form>
+
+		<hr>
+
+		<p>have an account already? <a href="?view=login">login</a></p>
+
+
 	</main>
 
 	<!-- Footer -->

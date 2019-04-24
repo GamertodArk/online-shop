@@ -1,3 +1,6 @@
+/*
+* This file imports all the stylesheets modules
+*/
 *,
 *:before,
 *:after {
@@ -11,9 +14,10 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
-/*
-* This file imports all the stylesheets modules
-*/
+a {
+  color: #777;
+}
+
 body {
   background-color: #eee;
 }

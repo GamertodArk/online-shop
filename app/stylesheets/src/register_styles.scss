@@ -1,7 +1,38 @@
 @import 'partials/base';
+@include fullscreen();
 
 body {
 	header {  @import 'partials/nav';  }
+
+	main {
+		padding: 2em;
+		margin: auto;
+		max-width: $max_width;
+		flex-direction: column;
+		@include center-flex(center);
+
+		h2 {
+			font-size: 20pt;
+			margin: 1em 0px;
+		}
+
+		form {
+			width: 70%;
+			flex-direction: column;
+			@include center-flex(center);
+
+			input[type=text],
+			input[type=password] {
+				@include input-text-style();
+			}
+
+			input[type=submit] {
+				@include input-submit-style();
+			}
+		}
+
+		hr { @include hr-style($light_grey); }
+	}
 
 	// Footer
 	@import 'partials/footer';

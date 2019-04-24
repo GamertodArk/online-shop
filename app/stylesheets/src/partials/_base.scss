@@ -1,3 +1,6 @@
+// Import all the modules
+@import '../modules/all';
+
 // General Styles
 *,
 *:before,
@@ -12,9 +15,13 @@ body {
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+a {
+	color: $dark_grey;
+}
+
 // font weighs
 $normal: 400;
 $bold: 600;
 
-// Import all the modules
-@import '../modules/all';
+// Screen widths deskup
+$max_width: 1200px;
