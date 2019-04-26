@@ -21,17 +21,17 @@
 			
 			<input type="password" name="password2" id="password2" placeholder="Repeat Password">
 
-			<input type="submit" value="Register">
+			<input type="submit" value="Register" id="register_btn">
 		</form>
 
 		<hr>
 
 		<p>have an account already? <a href="?view=login">login</a></p>
-
-
 	</main>
 
 	<!-- Footer -->
 	<?php include INC_DIR . 'footer.php' ?>
+	<script src="<?php echo JS_DIR ?>general.js"></script>
+	<script src="<?php echo JS_DIR ?>register_scripts.js"></script>
 </body>
 </html>

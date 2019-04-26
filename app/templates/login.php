@@ -28,5 +28,6 @@
 
 	<!-- Footer -->
 	<?php include INC_DIR . 'footer.php' ?>
+	<script src="<?php echo JS_DIR ?>general.js"></script>
 </body>
 </html>

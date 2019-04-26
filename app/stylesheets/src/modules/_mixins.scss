@@ -28,7 +28,7 @@
 }
 
 // Centers a single element using flexbox
-@mixin center-flex($align) {
+@mixin center-flex($align: center) {
 	display: flex;
 	align-items: center;
 	justify-content: $align;
